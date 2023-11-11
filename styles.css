@@ -1,0 +1,179 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    color:  #333;
+    scroll-behavior: smooth;
+    background-color: #f7e5e6;
+}
+
+header {
+    background-color: #f475ff; #ffcc00;
+    text-align: center;
+    color: white;
+    padding: 30px 0;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add styles for the wishes section */
+
+/* ... your existing styles ... */
+
+#wishes {
+    background-color: #ff8c94;
+    color: #fff;
+}
+
+.wish {
+    margin: 20px 0;
+}
+
+.wish img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.wish p {
+    text-align: left;
+}
+
+.wish-name {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+
+#countdown,
+#gifts,
+#RSVP {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.photo-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.photo-container img {
+    min-width: 100%;
+    scroll-snap-align: start;
+}
+
+@media screen and (max-width: 768px) {
+    .photo-container {
+        overflow-x: auto;
+    }
+}
+
+/* Your existing styles remain unchanged */
+
+/* Add new styles for confetti animation */
+
+.confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.confetti {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    animation: fall 2s linear infinite;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-100vh);
+    }
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+/* ... your existing styles ... */
+
+#few-photos {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+#few-photos,h2 {
+    margin-bottom: 20px;
+}
+
+.photo-container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.photo-container-1 {
+    width: 30%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 5px solid #ff8c94; /* Border color for the album feel */
+    border-radius: 10px;
+}
+
+.photo-container-1,img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* ... your existing photo-container styles ... */
